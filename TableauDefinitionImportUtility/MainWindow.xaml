@@ -1,22 +1,23 @@
 ﻿<Window x:Class="TableauDefinitionImportUtility.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Tableau Definition Import Utility" Height="477" Width="900" Icon="tableau.ico">
+        Title="Tableau Definition Import Utility" Height="477" Width="900" Icon="tableau.ico" Margin="0">
 
 
 
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="450" />
             <ColumnDefinition Width="5" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid Background="#DCDCDC"
-        Width="Auto"
-        Height="Auto"
-        HorizontalAlignment="Stretch"
-        VerticalAlignment="Stretch"
-        ShowGridLines="False" Margin="0,0,2,2">
+        <Grid Grid.Column="1" Background="#DCDCDC"
+            Width="Auto"
+            Height="Auto"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            ShowGridLines="False" Margin="0,0,2,2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="15" MinWidth="15" />
@@ -41,7 +42,8 @@
             Browse to the Tableau workbook and the definition CSV file. 
             Click OK to merge the definitions into the workbook.  
             The definitions need to contain two columns 
-            separated by a configurable separator and configurable enclosing characters.
+            separated by a configurable separator and configurable enclosing characters. The first column represents the column name and the second column represents
+                the definition of the field. 
             </TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="1">Tableau Workbook:</TextBlock>
             <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Name="txtTableauWB"/>
@@ -70,8 +72,8 @@
         </Grid>
 
 
-        <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" />
-        <Grid Grid.Column="2">
+        <GridSplitter Grid.Column="2" Width="5" HorizontalAlignment="Stretch" />
+        <Grid Grid.Column="3">
 
             <Label Content="Log Output:" Margin="10,10,0,0" HorizontalAlignment="Left" Width="112" Height="24" VerticalAlignment="Top" Padding="3"/>
             <TextBox x:Name="txtLog" TextWrapping="Wrap" Padding="3" Margin="10,42,10,10" Foreground="#FF0837D4" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
