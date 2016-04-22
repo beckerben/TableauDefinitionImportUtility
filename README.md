@@ -12,6 +12,10 @@ The Tableau workbooks are simply XML documents so this utility will import the d
 
 See the WIKI for more help using the utility
 
+### Example of tooltip text displaying within Tableau
+![alt tag](https://raw.githubusercontent.com/beckerben/TableauDefinitionImportUtility/master/Misc/Images/ToolTipExample.png)
+
+### Tableau Definition Import Utility Screenshot
 ![alt tag](https://raw.githubusercontent.com/beckerben/TableauDefinitionImportUtility/master/Misc/Images/Application.png)
 
 
