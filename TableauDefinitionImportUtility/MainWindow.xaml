@@ -40,7 +40,7 @@
 
             <TextBlock Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" TextWrapping="Wrap" Margin="0,5,0,15">
             Browse to the Tableau workbook and the definition CSV file. 
-            Click OK to merge the definitions into the workbook.  
+            Click "Import" to merge the matching definitions from the definitions CSV into the Tableau workbook.  
             The definitions need to contain two columns 
             separated by a configurable separator and configurable enclosing characters. The first column represents the column name and the second column represents
                 the definition of the field. 
